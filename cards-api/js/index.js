@@ -4,6 +4,9 @@
 // step 2: get input value
 // error handling for string value
 // error handling for empty input field
+// error handling for negative number
+// diplay card
+// diplay card details
 const main = document.getElementById('main');
 
 
@@ -56,6 +59,7 @@ const cardDisplay = (cards) => {
         main.appendChild(div);
     }
 }
+// card details here
 const cardDetails = (code) => {
     fetch('https://deckofcardsapi.com/api/deck/new/draw/?count=52')
         .then(res => res.json())
