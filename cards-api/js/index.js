@@ -8,7 +8,7 @@
 const searchButton = () => {
     const input = document.getElementById('input-value');
     const error = document.getElementById('error');
-    const inputValue = input.value;
+    const inputValue = parseInt(input.value);
     //isNan check number or string/others. if string / others then enter this block
     if (isNaN(inputValue) || inputValue == '') {
         // alert('please enter number')
