@@ -2,9 +2,15 @@
 
 // step 1: add button event handler
 // step 2: get input value
+// error handling for string value
 
 const searchButton = () => {
     const input = document.getElementById('input-value');
+    const error = document.getElementById('error');
     const inputValue = input.value;
-    console.log(inputValue) 
+    //isNan check number or string/others. if string / others then enter this block
+    if (isNaN(inputValue)) {
+        // alert('please enter number')
+        error.innerText = "*pleae enter a number !";
+    }
 }
